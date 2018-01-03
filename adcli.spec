@@ -33,6 +33,5 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 
 %files
 %doc AUTHORS COPYING ChangeLog NEWS README
-%doc %{_docdir}/adcli
 %{_sbindir}/adcli
 %{_mandir}/*/*
