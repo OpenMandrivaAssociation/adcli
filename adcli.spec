@@ -9,7 +9,7 @@ BuildRequires:	intltool
 BuildRequires:	gettext-devel
 BuildRequires:	krb5-devel
 BuildRequires:	openldap-devel
-BuildRequires:	libxslt
+BuildRequires:	pkgconfig(libxslt)
 BuildRequires:	xmlto
 Requires:	sasl-plug-gssapi
 
