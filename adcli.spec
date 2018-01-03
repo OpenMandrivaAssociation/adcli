@@ -9,7 +9,7 @@ BuildRequires:	intltool
 BuildRequires:	gettext-devel
 BuildRequires:	krb5-devel
 BuildRequires:	openldap-devel
-BuildRequires:	libxslt
+BuildRequires:	pkgconfig(libxslt)
 BuildRequires:	xmlto
 Requires:	sasl-plug-gssapi
 
@@ -33,6 +33,5 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 
 %files
 %doc AUTHORS COPYING ChangeLog NEWS README
-%doc %{_datadir}/doc/adcli/*
 %{_sbindir}/adcli
 %{_mandir}/*/*
