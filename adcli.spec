@@ -1,5 +1,5 @@
 Name:		adcli
-Version:	0.8.0
+Version:	0.8.2
 Release:	1
 Summary:	System/Configuration/Networking
 License:	LGPLv2+
@@ -29,9 +29,10 @@ make check
 
 %install
 %makeinstall_std
-find %{buildroot} -name '*.la' -exec rm -f {} ';'
 
 %files
-%doc AUTHORS COPYING ChangeLog NEWS README
+%license COPYING
+%doc AUTHORS ChangeLog NEWS README
+%doc %{_docdir}/%{name}
 %{_sbindir}/adcli
 %{_mandir}/*/*
