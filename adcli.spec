@@ -11,6 +11,7 @@ BuildRequires:	krb5-devel
 BuildRequires:	openldap-devel
 BuildRequires:	pkgconfig(libxslt)
 BuildRequires:	pkgconfig(libsasl2)
+BuildRequires:	pkgconfig(com_err)
 BuildRequires:	xmlto
 Requires:	sasl-plug-gssapi
 
