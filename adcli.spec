@@ -10,6 +10,7 @@ BuildRequires:	gettext-devel
 BuildRequires:	krb5-devel
 BuildRequires:	openldap-devel
 BuildRequires:	pkgconfig(libxslt)
+BuildRequires:	pkgconfig(libsasl2)
 BuildRequires:	xmlto
 Requires:	sasl-plug-gssapi
 
