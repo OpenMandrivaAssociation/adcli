@@ -1,10 +1,10 @@
 Name:		adcli
-Version:	0.8.2
-Release:	2
+Version:	0.9.0
+Release:	1
 Summary:	System/Configuration/Networking
 License:	LGPLv2+
 URL:		http://cgit.freedesktop.org/realmd/adcli
-Source0:	http://www.freedesktop.org/software/realmd/releases/adcli-%{version}.tar.gz
+Source0:	https://gitlab.freedesktop.org/realmd/adcli/-/archive/%{version}/adcli-%{version}.tar.bz2
 BuildRequires:	intltool
 BuildRequires:	gettext-devel
 BuildRequires:	krb5-devel
@@ -20,17 +20,18 @@ adcli is a tool for joining an Active Directory domain using
 standard LDAP and Kerberos calls.
 
 %prep
-%setup -q
+%autosetup -p1
+./autogen.sh
+%configure
 
 %build
-%configure
-%make
+%make_build
 
 %check
 make check
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %license COPYING
