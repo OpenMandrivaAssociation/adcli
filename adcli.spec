@@ -1,6 +1,6 @@
 Name:		adcli
 Version:	0.9.1
-Release:	1
+Release:	2
 Summary:	System/Configuration/Networking
 License:	LGPLv2+
 URL:		http://cgit.freedesktop.org/realmd/adcli
