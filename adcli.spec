@@ -1,6 +1,6 @@
 Name:		adcli
-Version:	0.9.1
-Release:	2
+Version:	0.9.2
+Release:	1
 Summary:	System/Configuration/Networking
 License:	LGPLv2+
 URL:		http://cgit.freedesktop.org/realmd/adcli
@@ -8,7 +8,7 @@ Source0:	https://gitlab.freedesktop.org/realmd/adcli/-/archive/%{version}/adcli-
 BuildRequires:	intltool
 BuildRequires:	gettext-devel
 BuildRequires:	krb5-devel
-BuildRequires:	openldap-devel
+BuildRequires:	pkgconfig(ldap)
 BuildRequires:	pkgconfig(libxslt)
 BuildRequires:	pkgconfig(libsasl2)
 BuildRequires:	pkgconfig(com_err)
@@ -35,7 +35,6 @@ make check
 
 %files
 %license COPYING
-%doc AUTHORS ChangeLog NEWS README
-%doc %{_docdir}/%{name}
+%{_docdir}/adcli
 %{_sbindir}/adcli
 %{_mandir}/*/*
