@@ -3,7 +3,7 @@ Version:	0.9.2
 Release:	1
 Summary:	System/Configuration/Networking
 License:	LGPLv2+
-URL:		http://cgit.freedesktop.org/realmd/adcli
+URL:		https://cgit.freedesktop.org/realmd/adcli
 Source0:	https://gitlab.freedesktop.org/realmd/adcli/-/archive/%{version}/adcli-%{version}.tar.bz2
 BuildRequires:	intltool
 BuildRequires:	gettext-devel
