@@ -5,6 +5,11 @@ Summary:	System/Configuration/Networking
 License:	LGPLv2+
 URL:		https://cgit.freedesktop.org/realmd/adcli
 Source0:	https://gitlab.freedesktop.org/realmd/adcli/-/archive/%{version}/adcli-%{version}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	intltool
 BuildRequires:	gettext-devel
 BuildRequires:	krb5-devel
