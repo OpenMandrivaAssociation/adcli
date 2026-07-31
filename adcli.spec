@@ -1,5 +1,5 @@
 Name:		adcli
-Version:	0.9.2
+Version:	0.9.3a
 Release:	1
 Summary:	System/Configuration/Networking
 License:	LGPLv2+
